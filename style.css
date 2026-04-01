@@ -1,0 +1,198 @@
+#font-manager-settings {
+  padding: 10px 0;
+}
+
+#font-manager-settings .fm-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--SmartThemeBodyColor);
+}
+
+#font-manager-settings .fm-section {
+  margin-bottom: 16px;
+}
+
+#font-manager-settings .fm-section-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--SmartThemeBodyColor);
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+
+#font-manager-settings .fm-font-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+#font-manager-settings .fm-font-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid var(--SmartThemeBorderColor);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  background: var(--SmartThemeBlurTintColor);
+}
+
+#font-manager-settings .fm-font-item:hover,
+#font-manager-settings .fm-font-item:active {
+  background: var(--SmartThemeBorderColor);
+}
+
+#font-manager-settings .fm-font-item.active {
+  border-color: var(--SmartThemeQuoteColor);
+  box-shadow: 0 0 0 1px var(--SmartThemeQuoteColor);
+}
+
+#font-manager-settings .fm-font-preview {
+  font-size: 14px;
+  color: var(--SmartThemeBodyColor);
+  line-height: 1.4;
+}
+
+#font-manager-settings .fm-font-name {
+  font-size: 10px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+#font-manager-settings .fm-radio {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--SmartThemeBorderColor);
+  flex-shrink: 0;
+  position: relative;
+}
+
+#font-manager-settings .fm-font-item.active .fm-radio {
+  border-color: var(--SmartThemeQuoteColor);
+  background: var(--SmartThemeQuoteColor);
+}
+
+#font-manager-settings .fm-font-item.active .fm-radio::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#font-manager-settings .fm-upload-area {
+  border: 2px dashed var(--SmartThemeBorderColor);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  color: var(--SmartThemeBodyColor);
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+#font-manager-settings .fm-upload-area:active {
+  border-color: var(--SmartThemeQuoteColor);
+  opacity: 1;
+}
+
+#font-manager-settings .fm-custom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+#font-manager-settings .fm-custom-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid var(--SmartThemeBorderColor);
+  border-radius: 8px;
+  background: var(--SmartThemeBlurTintColor);
+}
+
+#font-manager-settings .fm-custom-item.active {
+  border-color: var(--SmartThemeQuoteColor);
+  box-shadow: 0 0 0 1px var(--SmartThemeQuoteColor);
+}
+
+#font-manager-settings .fm-custom-item-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+
+#font-manager-settings .fm-del-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(200,60,60,0.3);
+  border-radius: 6px;
+  background: rgba(200,60,60,0.08);
+  color: #c44;
+  font-size: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#font-manager-settings .fm-range-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#font-manager-settings .fm-range-row input[type="range"] {
+  flex: 1;
+}
+
+#font-manager-settings .fm-range-val {
+  font-size: 13px;
+  min-width: 36px;
+  text-align: right;
+  color: var(--SmartThemeBodyColor);
+}
+
+#font-manager-settings .fm-scope-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+#font-manager-settings .fm-scope-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--SmartThemeBorderColor);
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  background: var(--SmartThemeBlurTintColor);
+  color: var(--SmartThemeBodyColor);
+}
+
+#font-manager-settings .fm-scope-btn.active {
+  border-color: var(--SmartThemeQuoteColor);
+  background: var(--SmartThemeQuoteColor);
+  color: #fff;
+}
+
+/* 注入到页面的字体样式 */
+#fm-injected-style {
+  /* placeholder */
+}
